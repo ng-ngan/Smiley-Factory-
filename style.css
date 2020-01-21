@@ -1,0 +1,165 @@
+.container-factory{
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background-color: aquamarine;
+}
+
+.conveyor{
+    position: absolute;
+    bottom: 50px;
+}
+
+.control-system{
+    position: absolute;
+    bottom: 0px;
+}
+
+
+.conveyor-belt{
+    background-image: url("./sources/conveyor_belt_line.png");
+    background-size: contain;
+    height: 90px;
+    width: 380px;
+    background-repeat: no-repeat;
+}
+
+.machine {
+    background-image: url("./sources/control-system.png");
+    height: 280px;
+    width: 280px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 5;
+}
+
+.gear {
+    height: 50px;
+    width: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 3;
+    position: absolute;
+    top: 15px;
+}
+
+.gear-left {
+    background-image: url("./sources/tool_1.png");
+    left: 15px;
+}
+.gear-right {
+    background-image: url("./sources/tool_2.png");
+    right: 15px;
+}
+
+.funnel {
+    background-image: url("./sources/funnel.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    left:45%;
+    top: -18%;
+    z-index: 1;
+}
+
+.conveyor-left {
+    left:50px;
+}
+.conveyor-right {
+    left:920px;
+}
+
+.conveyor-center {
+    left:450px;
+}
+
+.control-system-left{
+    left:250px;
+}
+
+.control-system-right{
+    left:690px;
+}
+
+
+.robot{
+    position: absolute;
+    background-color: blueviolet;
+    bottom: 0px;
+    height: 300px;
+}
+
+.base {
+    background-image: url("./sources/conveyor_base.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    bottom: 0px;
+    left:50%;
+    position: absolute;
+    height: 300px;
+    width: 100px;
+}
+
+.arm {
+    background-image: url("./sources/conveyor_arm2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 0px;
+    left:20px;
+    position: absolute;
+    height: 200px;
+    width: 180px;
+    z-index: 3;
+}
+
+.picker {
+    background-image: url("./sources/conveyor_arm.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 5px;
+    left:170px;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    z-index: 3;
+}
+
+.face {
+    background-image: url("./sources/emoji_face.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    left:170px;
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    z-index: 3;
+    bottom: 132px;
+}
+
+.eye {
+    background-image: url("./sources/happy_eyes.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    left:400px;
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    z-index: 4;
+    bottom: 140px;
+}
+.mouth {
+    background-image: url("./sources/happy_mouth.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    left:700px;
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    z-index: 4;
+    bottom: 100px;
+}
+
+
