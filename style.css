@@ -1,8 +1,7 @@
 .container-factory{
     position: relative;
     width: 100%;
-    height: 450px;
-    background-color: aquamarine;
+    height: 600px;
 }
 
 .conveyor{
@@ -62,32 +61,31 @@
     position: absolute;
     left:45%;
     top: -18%;
-    z-index: 1;
+    z-index: 3;
 }
 
 .conveyor-left {
     left:50px;
 }
 .conveyor-right {
-    left:920px;
+    left:1050px;
 }
 
 .conveyor-center {
-    left:450px;
+    left:550px;
 }
 
 .control-system-left{
-    left:250px;
+    left:305px;
 }
 
 .control-system-right{
-    left:690px;
+    left:805px;
 }
 
 
 .robot{
     position: absolute;
-    background-color: blueviolet;
     bottom: 0px;
     height: 300px;
 }
@@ -139,27 +137,65 @@
     bottom: 132px;
 }
 
-.eye {
+.face .face_eye {
     background-image: url("./sources/happy_eyes.png");
     background-size: contain;
     background-repeat: no-repeat;
-    left:400px;
     position: absolute;
     height: 80px;
     width: 80px;
     z-index: 4;
-    bottom: 140px;
+    display: none;
+}
+
+.face .face_mouth {
+    background-image: url("./sources/happy_mouth.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 40px;
+    width: 80px;
+    top:50%;
+    z-index: 4;
+    display: none;
+}
+
+.eye {
+    background-image: url("./sources/happy_eyes.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    left:450px;
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    z-index: 2;
+    top:-100px;
+    
 }
 .mouth {
     background-image: url("./sources/happy_mouth.png");
     background-size: contain;
     background-repeat: no-repeat;
-    left:700px;
+    left:950px;
     position: absolute;
     height: 80px;
     width: 80px;
-    z-index: 4;
-    bottom: 100px;
+    z-index: 2;
+    top:-100px;
+}
+
+#select_eyes {
+    left:450px;
+    position: absolute;
+    width: 150px;
+    height: 40px;
+}
+
+#select_mouth{
+    position: absolute;
+    left:950px;
+    width: 150px;
+    height: 40px;
 }
 
 

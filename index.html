@@ -8,26 +8,56 @@
 </head>
 <body>
     <div class='container'>
-        <div class='container-nav'></div>
         <div class='container-factory'>
+
+            <button id="random">Random Face</button>
+
+            <select id="select_face_color">
+                <option value="0">Red </option>
+                <option value="1">Blue</option>
+                <option value="2">Green</option>
+                <option value="3">Yellow</option>
+                <option value="4">Grey</option>
+                <option value="5">Black</option>
+            </select> 
+
+
+            <select id="select_eyes">
+                <option value="0">Happy </option>
+                <option value="1">In Love</option>
+                <option value="2">Tongue</option>
+                <option value="3">Sad</option>
+            </select> 
+
+            <select id="select_mouth">
+                <option value="0">Happy</option>
+                <option value="1">In Love</option>
+                <option value="2">Tongue</option>
+                <option value="3">Sad</option>
+            </select> 
+
+
             <div class="robot">
                 <div class="base"></div>
                 <div class="arm"></div>
                 <div class="picker"></div>
             </div>
+
             <div class="conveyor conveyor-left">
                 <div class='conveyor-belt'>
                     <div class="gear gear-left"></div>
                     <div class="gear gear-right"></div>
                 </div>
             </div>
+
             <div class="conveyor conveyor-center">
-                
                 <div class='conveyor-belt'>
                     <div class="gear gear-left"></div>
                     <div class="gear gear-right"></div>
                 </div>
             </div>
+
+
             <div class="conveyor conveyor-right">
                 <div class='conveyor-belt'>
                     <div class="gear gear-left"></div>
@@ -39,22 +69,25 @@
                 <div class="funnel"></div>
                 <div class="machine"></div>
             </div>
+
             <div class="control-system control-system-right">
                   <div class="funnel"></div>    
                 <div class="machine"></div>
             </div>
+        
 
-
-            <div class="face"></div>
+            <div class="face">
+                <div class="face_eye" ></div>
+                <div class="face_mouth"></div>
+            </div>
             <div class="eye"></div>
             <div class="mouth"></div>
         </div>
 
 
 
-
-
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.5/gsap.min.js'></script>
     <script src='./main.js'></script>
 </body>
