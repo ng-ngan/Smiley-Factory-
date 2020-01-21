@@ -1,0 +1,109 @@
+=base($source, $height, $width)
+	background-image: url($source)
+	background-size: contain
+	background-repeat: no-repeat
+	height: $height
+	width: $width
+
+
+.container-factory
+	width: 100%
+	height: 450px
+	position: relative
+	background-color: aquamarine
+	.robot
+		position: absolute
+		background-color: blueviolet
+		bottom: 0px
+		height: 300px
+
+		.base 
+			+base("./sources/conveyor_base.png",300px, 100px)
+			bottom: 0px
+			left: 50%
+			position: absolute
+
+		.picker
+			+base("./sources/conveyor_arm.png",100px,100px)
+			top: 5px
+			left: 170px
+			position: absolute
+			z-index: 3
+
+		.arm
+			+base("./sources/conveyor_arm2.png",200px,180px)
+			top: 0px
+			left: 20px
+			position: absolute
+			z-index: 3
+
+	.conveyor
+		position: absolute
+		bottom: 50px
+		.conveyor-belt
+			+base("./sources/conveyor_belt_line.png",90px, 380px)
+		.gear
+			position: absolute
+			z-index: 3
+			top: 15px
+			.gear-left
+				+base("./sources/tool_1.png",50px,50px)
+				left: 15px
+			.gear-right
+				+base("./sources/tool_2.png",50px,50px)
+				right: 15px
+	.conveyor-left
+		left: 50px
+	
+	.conveyor-right
+		left: 920px
+		
+	.conveyor-center
+		left: 450px
+
+
+	.control-system
+		position: absolute
+		bottom: 0px
+		.funnel
+			+base("./sources/funnel.png",120px, 120px)
+			position: absolute
+			left: 45%
+			top: -18%
+			z-index: 1
+		.machine
+			+base("./sources/control-system.png",280px, 280px)
+			position: relative
+			z-index: 5
+	
+	.control-system-left
+		left: 250px
+
+	.control-system-right
+		left: 690px
+
+	.face
+		+base("./sources/emoji_face.png",80px, 80px)
+		left: 170px
+		position: absolute
+		bottom: 132px
+		z-index: 3
+
+	.eye
+		+base("./sources/happy_eyes.png",80px, 80px)
+		left: 400px
+		position: absolute
+		bottom: 140px
+		z-index: 4
+
+	.mount
+		+base("./sources/happy_mouth.png",80px, 80px)
+		left: 700px
+		position: absolute
+		bottom: 100px
+		z-index: 4
+
+		
+
+
+
